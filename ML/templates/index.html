@@ -1,0 +1,13 @@
+<form method="post">
+    <label>Enter 5 features (comma separated):</label><br>
+    <input type="text" name="features" required>
+    <input type="submit" value="Predict">
+</form>
+
+{% if prediction %}
+    <h3>{{ prediction }}</h3>
+{% endif %}
+
+{% if final_close %}
+    <h4>{{ final_close }}</h4>
+{% endif %}
